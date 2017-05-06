@@ -18,6 +18,30 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\rplidar.h" />
+    <ClInclude Include="include\rplidar_cmd.h" />
+    <ClInclude Include="include\rplidar_driver.h" />
+    <ClInclude Include="include\rplidar_protocol.h" />
+    <ClInclude Include="include\rptypes.h" />
+    <ClInclude Include="src\arch\win32\arch_win32.h" />
+    <ClInclude Include="src\arch\win32\net_serial.h" />
+    <ClInclude Include="src\arch\win32\timer.h" />
+    <ClInclude Include="src\arch\win32\winthread.hpp" />
+    <ClInclude Include="src\hal\abs_rxtx.h" />
+    <ClInclude Include="src\hal\event.h" />
+    <ClInclude Include="src\hal\locker.h" />
+    <ClInclude Include="src\hal\thread.h" />
+    <ClInclude Include="src\hal\util.h" />
+    <ClInclude Include="src\rplidar_driver_serial.h" />
+    <ClInclude Include="src\sdkcommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\arch\win32\net_serial.cpp" />
+    <ClCompile Include="src\arch\win32\timer.cpp" />
+    <ClCompile Include="src\hal\thread.cpp" />
+    <ClCompile Include="src\rplidar_driver.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{87994CF9-0F26-48F3-9523-58BDF1AAA7F9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,6 +101,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -89,6 +114,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -103,6 +129,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -119,6 +146,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -126,9 +154,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

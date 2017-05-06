@@ -15,6 +15,67 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <ClInclude Include="include\rplidar_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rplidar_protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rptypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rplidar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rplidar_cmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdkcommon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\arch\win32\arch_win32.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\arch\win32\net_serial.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\arch\win32\timer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\arch\win32\winthread.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hal\abs_rxtx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hal\event.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hal\locker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hal\thread.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hal\util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rplidar_driver_serial.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\arch\win32\net_serial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\arch\win32\timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hal\thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rplidar_driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
